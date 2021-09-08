@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Welcome from "./componentes/welcomePage/welcome.js"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Welcome />
   </React.StrictMode>,
   document.getElementById('root')
 );
