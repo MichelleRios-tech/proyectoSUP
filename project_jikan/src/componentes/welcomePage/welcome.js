@@ -6,11 +6,12 @@ import s from "./welcome.module.css";
 function Welcome(props){
   return (
     <div>
-      <h1>Hello Welcome</h1>
+      <h1>Hola Bienvenido!</h1>
       <p>
-        This is the project that we started with the help of our T.A.S at HENRY.
-        which will help us to practice our individual project.
-        Let's go with everything!
+        Este es el proyecto que iniciamos de la mano de nuestro T.A.S de HENRY.
+        el cual nos va servir para practicar nustro preyecto individual.
+        
+        ¡Vamos con toda!
       </p>
     </div>
   )
