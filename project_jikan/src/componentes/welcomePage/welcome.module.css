@@ -1,7 +1,31 @@
 
-.contenedor{
-  background-image: url("../imagenes/anime1.png");
+.bienvenida{
+  opacity: 0.5;
+  background-image: url("./721393.jpg");
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+p{
   
 }
-
-
+#background-video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#textContainer {
+  border-radius: 5px;
+  opacity: 0.92;
+  background-color: rgba(251, 251, 251, 0.815);
+}
