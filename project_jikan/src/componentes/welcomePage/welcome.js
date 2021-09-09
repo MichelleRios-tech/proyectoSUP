@@ -14,7 +14,7 @@ function Welcome(props){
     </video>
       <div className={s.bienvenida}>
         <div id={s.textContainer}>
-        <h1>Hola Bienvenido xd xd!</h1>
+        <h1>Hola Bienvenido xd xd otra vez!</h1>
         <p>
           Este es el proyecto que iniciamos de la mano de nuestro T.A.S de HENRY.
           el cual nos va servir para practicar nustro preyecto individual.
