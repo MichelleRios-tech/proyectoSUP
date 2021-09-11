@@ -1,0 +1,13 @@
+.header ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ul_navBar a {
+  text-decoration: none;
+}
+
+.ul_navBar li {
+  list-style: none;
+  text-decoration: none;
+}
