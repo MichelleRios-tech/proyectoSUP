@@ -1,0 +1,7 @@
+.CardElement{
+    display: grid;
+    place-items: center;
+    }
+.animeIMG{
+    border-radius: 30px;
+}

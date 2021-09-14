@@ -1,42 +1,22 @@
 
 import './App.css';
-import Header from './components/Header'
+import Header from './components/Header/Header.js'
 import Landing from './components/Landing'
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
   Link
 } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/landing">Landing</Link>
-          </li>
-        </ul>
-      </nav>
 
-      {/* A <Switch> looks through its children <Route>s and
-          renders the first one that matches the current URL. */}
-      <Switch>
-        <Route exact path="/">
-          <Header />
-        </Route>
-        <Route exact path="/landing">
-          <Landing />
-        </Route>
-      </Switch>
+    <div className='appContainer'>
+      <Route path="/" component={Header}/>
+      <Route exact path="/landing" component={Landing}/>
     </div>
-  </Router>
-   
+
+
   );
 }
 
