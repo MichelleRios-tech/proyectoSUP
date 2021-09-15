@@ -2,7 +2,7 @@
 import './App.css';
 import Header from './components/Header'
 import Landing from './components/Landing'
-import {Route} from "react-router-dom";
+import {BrowserRouter as Router, Link,Route } from "react-router-dom";
 
 function App() {
   return (
@@ -21,14 +21,14 @@ function App() {
 
       {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
-      <Switch>
+      
         <Route exact path="/">
           <Header />
         </Route>
         <Route exact path="/landing">
           <Landing />
         </Route>
-      </Switch>
+      
     </div>
   </Router>
    

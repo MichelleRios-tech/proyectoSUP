@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react'
-import Card from './Card/Card';
+import Card from './Card'
 import { getAnime } from '../Redux/actions';
 import { useDispatch, useSelector } from "react-redux";
 
