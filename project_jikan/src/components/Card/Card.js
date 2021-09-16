@@ -1,15 +1,22 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Card.css'
+
 //import { Link } from 'react-router-dom'
 
-function Card({tittle, img_url}) {
-    
+function Card({anime}) {
+
+   
    // console.log('--------------');
-    console.log([img_url, tittle])
+    console.log(anime);
+    const bgIMG = anime.image_url;
+    const title = anime.title; 
+    const id = anime.mal_id;
+
     return (
         <div className='CardElement'>
-            <img className='animeIMG' src ={img_url} alt='portada'/>
-            <h2>{tittle}</h2>
+        <Link to ={"/details/"+id}><img className='animeIMG' src ={bgIMG} alt='portada'/></Link>
+        <h2>{title}</h2>
         </div>
     )
 }
