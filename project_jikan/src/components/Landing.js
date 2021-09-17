@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import Card from './Card/Card';
-import { getAiring, getAnime } from './redux/actions';
+import { getAiring } from './redux/actions';
 import { useDispatch, useSelector } from "react-redux";
+import './Landing.css'
 //const axios = require('axios')
 
 function Landing() {
     const airingAnimes = useSelector(state => state.airingAnimes)
-    const anime = useSelector(state => state.anime)
+    //const anime = useSelector(state => state.anime)
      const dispatch = useDispatch();
 
     // const [anime, setAnime] = useState({});
@@ -33,7 +34,7 @@ function Landing() {
     // }, [])
 
 useEffect(() => {
-    !airingAnimes && dispatch(getAiring())
+    !!airingAnimes && dispatch(getAiring())
 }, [dispatch,airingAnimes])
 
 
@@ -41,11 +42,11 @@ useEffect(() => {
     //[json.image_url, json.tittle]
     console.log(airingAnimes);
     return (
-        <>
+        <div className='hex-grid__list'>
         {airingAnimes?.map( e =>
             <Card anime={e} key={e.mal_id}/>
 
-            )}</>
+            )}</div>
     )
 }
 

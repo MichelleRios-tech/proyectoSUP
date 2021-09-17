@@ -2,11 +2,7 @@
 import './App.css';
 import Header from './components/Header/Header.js'
 import Landing from './components/Landing'
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from "react-router-dom";
+import {Route} from "react-router-dom";
 import DetailAnime from './components/Details/Details';
 
 function App() {

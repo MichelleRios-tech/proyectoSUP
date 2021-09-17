@@ -5,11 +5,11 @@ import {
     PAGE_NOT_FOUND
 } from "./actions";
 
-const state = {
+const initialState = {
     anime: [],
     airingAnimes: []
 }
-export const animeReducer = function (state = 0, action) {
+export const animeReducer = function (state = initialState, action) {
     switch (action.type) {
         case GET_ANIME:
             return {

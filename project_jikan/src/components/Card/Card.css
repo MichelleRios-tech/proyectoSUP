@@ -1,7 +1,13 @@
 .CardElement{
     display: grid;
     place-items: center;
+    transform: skew(-15deg);
     }
 .animeIMG{
-    border-radius: 30px;
+    position: relative;
+z-index: 2;
+width: 142px;
+
+
+
 }
